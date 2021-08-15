@@ -23,11 +23,7 @@ function initScrollSuave() {
     linksInternos.forEach((link) => {
       link.addEventListener('click', scrollToSection);
     });
-
-    linksInternos.forEach((link) => {
-      link.addEventListener('touchstart', scrollToSection);
-    });
-
+    
   }
   initScrollSuave();
 
