@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cobuild</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="menu">
+        <div class="container menu">
             <div>
                 <a href="#topo">
                     Cobuild
                 </a>
             </div>
             <nav>
-                <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+              <!--  <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button> -->
                 <ul data-menu="list" id="menu">
                     <li><a href="#services">SERVICES</a></li>
                     <li><a href="#about">ABOUT US</a></li>
@@ -30,7 +33,7 @@
     </header>
 
     <main id="topo" class="bg-main">
-        <div>
+        <div class="container">
             <h1>
                 We're Building Your Future
             </h1>
@@ -41,7 +44,7 @@
             <form action="">
                 <input type="email" placeholder="Enter your email">
                 <button>
-                    get news
+                    GET NEWS
                 </button>
             </form>
         </div>
@@ -49,20 +52,20 @@
 
     <section id="services">
         <h2>
-            Our services
+            Our Services
         </h2>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
-        <div class="services">
+        <div class="services container">
             <div>
                 <img src="imagens/icon01.png" alt="">
                 <h3>
                     Fast Operations
                 </h3>
                 <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                    It is a long established fact that a reader will distracted by the readable.
                 </p>
             </div>
             <div>
@@ -71,7 +74,7 @@
                     Renovation
                 </h3>
                 <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                    It is a long established fact that a reader will distracted by the readable
                 </p>
             </div>
             <div>
@@ -80,7 +83,7 @@
                     Consultation
                 </h3>
                 <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                    It is a long established fact that a reader will distracted by the readable
                 </p>
             </div>
             <div>
@@ -89,46 +92,29 @@
                     Architecture
                 </h3>
                 <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                    It is a long established fact that a reader will distracted by the readable
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="container" id="about">
-        <img src="imagens/about.png" alt="">
-        <div>
-            <h2>
-                About Us
-            </h2>
-            <p>
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-                like Aldus PageMaker including versions of Lorem Ipsum. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+    <section id="about">
+        <div class="container" >
+            <img src="imagens/about.png" alt="">
+            <div>
+                <h2>
+                    About Us
+                </h2>
+                <p>
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                    like Aldus PageMaker including versions of Lorem Ipsum. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
         </div>
     </section>
 
     <section class="container" id="contact">
-        <div id="contacus">
-            <h2>
-              Contact Us
-            </h2>
-            <ul>
-              <li>
-                2532, Broadway New York 10025 NY
-              </li>
-              <li>
-                travel@travel.com
-              </li>
-              <li>
-                +1 212-932-0068
-              </li>
-              <li>
-                09:00 AM - 06:00 PM
-              </li>
-            </ul>
-        </div>
         <div>
             <h2>
             Get in Touch
@@ -151,7 +137,26 @@
             <button >
               SEND
             </button>
-          </div>
+        </div>
+        <div class="contactus">
+            <h2>
+                Contact Us
+            </h2>
+                <ul>
+                    <li>
+                        Av. Brg. Faria Lima, 153 Pinheiros
+                    </li>
+                    <li>
+                        contato@cobuild.com
+                    </li>
+                    <li>
+                        11 3236 3632 
+                    </li>
+                    <li>
+                        09:00 - 18:00
+                    </li>
+                </ul>
+        </div>
     </section>
 
     <section class="technologies">
@@ -168,21 +173,25 @@
             Contrary to popular belief, Lorem Ipsum is not simply random text. 
             It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
         </p>
-        <div class="clients">
+        <div class="clients container">
             <div>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-                    quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                </p>
+                <div>
+                    <img src="imagens/client01.png" alt="">
+                    <p>
+                        " Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. "
+                    </p>
+                </div>
                 <p>
                     Mark Smith
                 </p>
             </div>
             <div>
-                <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos 
-                    dolores et quas molestias excepturi sint occaecati cupiditate non provident
-                </p>
+                <div>
+                    <img src="imagens/client02.png" alt="">
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+                    </p>
+                </div>
                 <p>
                     Steve Martin
                 </p>
@@ -196,33 +205,38 @@
         </a>
     </section>
 
-    <footer class="footer">
+    <footer class="footer container">
         <div>
             <img src="imagens/icon05.png" alt="">
             <h2>
                 Address
             </h2>
-            <address>
-
-            </address>
+            <a href="https://goo.gl/maps/SZrqimMW2Re3KvFE6" target="_blank">
+                Av. Brg. Faria Lima, 153 Pinheiros
+            </a>
         </div>
         <div>
             <img src="imagens/icon06.png" alt="">
             <h2>
                 Phone
             </h2>
-            <p>
-                
-            </p>
+            <a href="tel:1132363632">
+                Phone: 11 3236 3632
+            <a href="tel:1132113612">
+                Fax: 11 3211 3612
+            </a>
         </div>   
         <div>
             <img src="imagens/icon07.png" alt="">
             <h2>
                 E-mail
             </h2>
-            <p>
-                
-            </p>
+            <a href="mailto:contato@cobuild.com">
+                contato@cobuild.com
+            </a>
+            <a href="mailto:support@cobuild.com">
+                support@cobuild.com
+            </a>
         </div>   
         <div>
             <img src="imagens/icon08.png" alt="">
@@ -245,5 +259,11 @@
             </ul>
         </div>   
     </footer>
+
+    <section class="copyright ">
+        <p>
+            © Cobuild 2021, All right reserved
+        </p>
+    </section>
 </body>
 </html>
