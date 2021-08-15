@@ -1,7 +1,7 @@
 // Scrol Suave
 
 function initScrollSuave() {
-    const linksInternos = document.querySelectorAll('.menu-nav a[href^="#"]');
+    const linksInternos = document.querySelectorAll('.menu a[href^="#"]');
   
     function scrollToSection(event) {
       event.preventDefault();
