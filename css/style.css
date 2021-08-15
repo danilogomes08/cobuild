@@ -41,6 +41,11 @@ button {
     color: white;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* header */
 
 .menu {
@@ -81,6 +86,64 @@ header {
     color: #f5af01;
 }
 
+[data-menu="button"] {
+    display: none;
+}
+  
+@media (max-width: 700px) {
+    .js [data-menu="button"] {
+        display: flex;
+        background: #f5af01;
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        margin: 0 20px 10px 0;
+        align-items: center;
+        position: relative;
+        z-index: 300;
+    }
+
+    .js [data-menu="button"]::before {
+        margin-right: 4px;
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: #fff;
+        box-shadow: 0 4px #fff, 0 -4px #fff;
+        transition: transform .3s;
+    }
+
+    .js [data-menu="button"].active::before {
+        transform: rotate(90deg);
+    }
+
+    .js [data-menu="list"] {
+        display: none;
+        position: absolute;
+        background: white;;
+        width: 160px;
+        z-index: 200;
+        top: 40px;
+        right: 0;
+        padding: 60px 0 20px 0;
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+        border-radius: 10px;
+    }
+    .js [data-menu="list"].active {
+        display: block;
+        animation: show-right .3s forwards;
+    }
+
+    .menu div a {
+        margin-left: 20px;
+    }
+}
+
 /* main */
 
 .bg-main {
@@ -116,6 +179,22 @@ main input {
     border-radius: 5px;
 }
 
+@media (max-width: 650px) {
+    h1 {
+        font-size: 2rem;
+    }
+    main div p {
+        max-width: 80%;
+    }
+    main input {
+        width: 250px;
+    }
+
+    .bg-main {
+        background-image: url(../imagens/bg-mobile.png);
+    }
+}
+
 /* services */
 
 #services {
@@ -145,10 +224,21 @@ main input {
 .services div {
     max-width: 200px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .services div h3 {
     margin: 20px 0;
+}
+
+@media (max-width: 700px) {
+    #services > p {
+        max-width: 80%;
+    }
+
+    .services {
+        justify-content: space-around;
+    }
 }
 
 /* About US */
@@ -170,7 +260,22 @@ main input {
 }
 
 #about p {
-    width: 500px;
+    max-width: 500px;
+}
+
+@media (max-width: 950px) {
+
+    #about {
+        padding: 50px 0;
+    }
+
+    #about > div {
+      flex-direction: column;
+    }
+    
+    #about div {
+      margin: 5%;
+    }
 }
 
 /* Contact Us */
@@ -259,6 +364,13 @@ main input {
     border-radius: 10px;
 }
 
+@media (max-width: 754px) {
+    #contact > div:nth-child(1) {
+        margin-bottom: 30px;
+    }
+
+}
+
 /* technologies */
 
 .technologies {
@@ -272,6 +384,7 @@ main input {
     text-align: center;
     font-size: 2rem;
 }
+
 
 /* testimonials */
 
@@ -303,12 +416,24 @@ main input {
     margin-right: 10px;
 }
 
-.clients  p {
+.clients p {
     margin-bottom: 10px;
 }
 
 .clients > div > p {
     margin-left: 13%;
+}
+
+@media (max-width: 916px) {
+    .clients > div:nth-child(1) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    #testimonials > p {
+        margin: 0 20px 80px 20px;
+    }
 }
 
 /* map */
@@ -319,7 +444,6 @@ main input {
 
 #map img {
     width: 100%;
-    height: auto;
 }
 
 /* footer */
@@ -335,7 +459,7 @@ main input {
 
 .footer {
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -344,12 +468,20 @@ main input {
     margin: 20px 0;
 }
 
-.footer div:first-child p {
+.footer div {
     width: 200px;
+    margin-bottom: 20px;
 }
 
 .footer a:hover {
     color: #f5af01;
+}
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* copyright  */
