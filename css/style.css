@@ -307,6 +307,10 @@ main input {
     margin-bottom: 10px;
     color: white;
  }
+
+ .contactus li a {
+     color: white;
+ }
   
  .contactus h2 {
     text-align: center;
@@ -328,6 +332,7 @@ main input {
     content: url(../imagens/before03.png);
     display: block;
     margin-right: 5%;
+    color: white; 
   }
   
  .contactus > ul li:nth-child(4)::before {
@@ -368,7 +373,6 @@ main input {
     #contact > div:nth-child(1) {
         margin-bottom: 30px;
     }
-
 }
 
 /* technologies */
