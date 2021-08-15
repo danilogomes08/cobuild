@@ -158,7 +158,7 @@ header {
 /* main */
 
 .bg-main {
-    background-image: url(../imagens/bg.png); /* center center */
+    background-image: url(../imagens/bg2.png); /* center center */
     background-size: cover;  
     padding: 250px 0;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ main input {
     }
 
     .bg-main {
-        background-image: url(../imagens/bg-mobile.png);
+        background-image: url(../imagens/bg-mobile2.png);
     }
 }
 
